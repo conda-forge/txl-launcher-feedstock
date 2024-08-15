@@ -1,5 +1,5 @@
 {% set name = "txl-launcher" %}
-{% set version = "0.2.13" %}
+{% set version = "0.2.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/txl_launcher-{{ version }}.tar.gz
-  sha256: 8d179263708178942ffda93f128abea25f8c2b3cac8f0f39b2e00d3905cc7851
+  sha256: 6a9dd60c80424114e9e4d89bc775c2aa6d568c3c8b523a2ca7832bbd456b5b5c
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - hatchling
   run:
     - python >=3.10
-    - txl
+    - txl >=0.2.18,<0.3.0
 
 test:
   # `pip check` was disabled, see: https://github.com/conda-forge/staged-recipes/pull/26869
