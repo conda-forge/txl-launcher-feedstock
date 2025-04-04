@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "txl-launcher" %}
-{% set version = "0.2.14" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/txl_launcher-{{ version }}.tar.gz
-  sha256: 6a9dd60c80424114e9e4d89bc775c2aa6d568c3c8b523a2ca7832bbd456b5b5c
+  sha256: e69eda7d3bd7ac5c1bedde2d9e1dcccc2c8fdf4f16d49d21d670f07c6af77f14
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
