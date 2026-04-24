@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "txl-launcher" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/txl_launcher-{{ version }}.tar.gz
-  sha256: d7b2f3172e30b334ed875e0b29f28d917a2fd5d31708d534d34f6d6700df14df
+  sha256: 496ca57bc71c481e910fb58eb72393f745292ef18ad20ea09db1c0dcffd9c746
 
 build:
   noarch: python
